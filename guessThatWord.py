@@ -15,7 +15,7 @@ def display_word(word, guessed_letters):
         display += ' '  # Add a space between letters
     return display.rstrip()  # Remove trailing space
 
-def hangman():
+def guessThatWord():
     word = choose_word()
     guessed_letters = []
     attempts = 6  # Number of allowed incorrect attempts
@@ -55,4 +55,4 @@ def hangman():
         print("\nSorry, you've run out of attempts. The word was:", word)
 
 if __name__ == "__main__":
-    hangman()
+    guessThatWord()
